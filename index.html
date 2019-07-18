@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>datem.cf</title>
+<meta name="author" content="dyn">
+<meta name="description" content="Personal site for random ideas.">
+<meta name="keywords" content="datem">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/vnd.microsoft.icon">
+<script src="./js/head.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
+<link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
+</head>
+<body>
+<iframe src="./assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio src="" id="audioPlayer" autoplay="true" autostart="true"></audio>
+<div class="animated fadeIn">
+</ul>
+<div class="center noselect">
+<div>
+<h1 class="title">datem.cf</h1>
+<div id="clockbox" style="font-size: 17px;text-align: center;color: white;font-family: Impact;letter-spacing: 1px;text-shadow: 2px 2px #000000"></div>
+<script type="34f20bfccb00bcff8cec0b4c-text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+":"+nsec+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+<h2 class="main_account"><a href="https://steamcommunity.com/id/datempje" target="_blank"></a><br>
+<a href="https://steamcommunity.com/id/datempje" target="_blank"><img id="main_picture" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/37/372f96c7fd2db038880f5add71f6513600ccd1bf_full.jpg"></a></h2>
+<canvas id="canvas"></canvas>
+<script src="./js/audioPlayer.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
+<script type="34f20bfccb00bcff8cec0b4c-text/javascript">
+      audioPlayer();
+  </script>
+<script src="./js/main.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="34f20bfccb00bcff8cec0b4c-|49" defer=""></script></body>
+
+<audio id="" autoplay loop>
+        <source src="assets/video.mp3">
+            <img src="https://iplogger.org/1ns767"> 
+    
+
+</html>
